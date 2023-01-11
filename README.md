@@ -1,0 +1,1 @@
+This repository is for learning the shell at holberton schools
