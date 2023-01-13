@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | awk ' { print $NF } ' | sed '1d'
+ls -1t
