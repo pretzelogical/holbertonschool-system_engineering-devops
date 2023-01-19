@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # This script will display the time for 12 hours and 59 minutes
-hour=-1
+hour=0
 minute=0
-while [ $hour -lt 12 ]
+while [ $hour -lt 13 ]
 do
     case $minute in
 
 	0)
-	    echo "Hour: $(( hour + 1 ))"
-	    ((hour++))
+	    echo "Hour: $hour"
 	    ((minute++))
 	    ;;
 	60)
 	    minute=0
+	    ((hour++))
 	    ;;
 	*)
 	    echo $minute
