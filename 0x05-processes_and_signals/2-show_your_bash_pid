@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script will list the runnning processes that have bash in the string
+ps -auxf | grep bash
