@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script will display numbers from 1 to 100 except under these conditions:
+# echo "FizzBuzz" when the number is a multiple of 3 and 5
+# echo "Fizz" when the number is a multiple of 3
+# echo "Buzz" when the number is a multiple of 5
+
+for (( i=1; i<=100; i++ ))
+do
+    if ! (( i % 15 ))
+    then
+	echo "FizzBuzz"
+    elif ! (( i % 3 ))
+    then
+	echo "Fizz"
+    elif ! (( i % 5 ))
+    then
+	echo "Buzz"
+    else
+	echo $i
+    fi
+done
