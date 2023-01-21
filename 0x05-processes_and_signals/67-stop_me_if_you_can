@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # This script will kill "7-highlander" process
-pid=$(pgrep -f "7-highlander")
 
-kill -SIGTERM "$pid"
+pkill -f -SIGTERM 7-highlander
